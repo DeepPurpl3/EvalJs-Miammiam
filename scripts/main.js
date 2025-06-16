@@ -33,8 +33,8 @@ function addTask() {
       return;
     }
     const taskObj = {
-      name: nom,
-      nombre: quantity,
+      name: nom.value,
+      nombre: quantity.value,
       description: inputBox.value
     };
   
@@ -45,12 +45,7 @@ function addTask() {
     const div = document.createElement("div");
     div.classList.add("task-card"); //pour styliser
   
-    div.innerHTML = `
-      
-      <p> ${taskObj.name}</p>
-      <p> ${taskObj.nombre}</p>
-      <p> ${taskObj.description}</p>
-    `
+    div.innerHTML = `<p> ${taskObj.name} a pris ${taskObj.nombre} ${taskObj.description} </p>`
   
   
       let span = document.createElement("span");

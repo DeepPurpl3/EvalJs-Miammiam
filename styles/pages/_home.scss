@@ -12,4 +12,10 @@ span {
     }
 }
 
-// .display {}  
+.display {
+
+    & div {
+        justify-content: center;
+        display: flex;
+    }
+}
