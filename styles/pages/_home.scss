@@ -1,0 +1,15 @@
+@use "../abstracts/" as *;
+.container {
+    margin: auto;
+    width: 90%;
+    text-align: center;
+}
+span {
+    &:hover {
+        background-color: red;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+}
+
+// .display {}  
