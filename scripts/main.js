@@ -45,7 +45,7 @@ function addTask() {
     const div = document.createElement("div");
     div.classList.add("task-card"); //pour styliser
   
-    div.innerHTML = `<p> ${taskObj.name} a pris ${taskObj.nombre} ${taskObj.description} </p>`
+    div.innerHTML = `<p> [${taskObj.name}] ${taskObj.nombre}x  ${taskObj.description} </p>`
   
   
       let span = document.createElement("span");
